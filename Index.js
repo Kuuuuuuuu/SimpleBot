@@ -2,6 +2,10 @@ const Eris = require("eris");
 
 const bot = new Eris(process.env.DISCORD_BOT_TOKEN);
 
+bot.on("ready", () => {
+  console.log("Online!");
+});
+
 bot.on("messageCreate", msg => {
   if (msg.content === "ping") {
     bot.createMessage(msg.channel.id, "pong!");
