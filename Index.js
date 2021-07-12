@@ -1,6 +1,6 @@
 const Eris = require("eris");
 
-const bot = new Eris(process.env.DISCORD_BOT_TOKEN);
+const bot = new Eris(process.env.TOKEN);
 
 bot.on("ready", () => {
   console.log("Online!");
